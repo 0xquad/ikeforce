@@ -14,8 +14,21 @@ Guides can be found here:
 
 INSTALL
 =======
-Requires the `pyip`, `pycrypto` and `pyopenssl` modules installed, but other than that it's only standard libs.
+Requires the `pyip` and `pycrypto` modules installed, but other than that it's only standard libs.
 `pyip` is the most likely lib that you won't have, install it with 'pip install pyip'
+
+
+    git clone [...]
+    virtualenv -p python2 ikeforce
+    cd ikeforce
+    . bin/activate
+    pip install -r requirements.txt
+    
+    ## Run as root to bind to UDP port 500
+    sudo -s
+    . bin/activate
+    ./ikeforce.py [...]
+
 
 USAGE
 =====
